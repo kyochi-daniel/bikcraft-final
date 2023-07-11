@@ -1,0 +1,106 @@
+:root {
+  --white: #ffffff;
+  --grey-100: #f7f7f7;
+  --grey-200: #ededed;
+  --grey-300: #dedede;
+  --grey-400: #cccccc;
+  --grey-500: #b2b2b2;
+  --grey-600: #9c9c9c;
+  --grey-700: #717171;
+  --dark-grey-100: #595959;
+  --dark-grey-200: #404040;
+  --dark-grey-300: #2e2e2e;
+  --dark-grey-400: #111111;
+  --black: #000000;
+  --yello-400: #ffbb00;
+  --yello-500: #e4a30b;
+  --yello-600: #a66f00;
+  --yello-700: #664400;
+  --yello-800: #332200;
+}
+
+.header-bg {
+  background-color: var(--black);
+}
+
+.header-container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.header-menu a {
+  color: var(--white);
+  font-size: 1.125rem;
+
+  display: inline-block;
+
+  padding: 1rem 0;
+
+  position: relative;
+}
+
+.header-menu a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.125rem;
+  width: 0;
+  background-color: var(--white);
+  margin-top: 0.25rem;
+
+  transition: 0.3s;
+}
+
+.header-menu a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 1.25rem;
+  }
+
+  .header-menu a {
+    padding: 0.75rem 1rem;
+
+    border-radius: 4px;
+
+    background-color: var(--dark-grey-400);
+
+    transition: 0.3s;
+  }
+
+  .header-menu a::after {
+    display: none;
+  }
+
+  .header-menu a:hover {
+    background-color: var(--dark-grey-300);
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu {
+    gap: 0.75rem;
+  }
+
+  .header-menu a {
+    padding: 0.5rem 0.75rem;
+
+    font-size: 0.875rem;
+  }
+}
