@@ -5,9 +5,13 @@
 /* Utilidades */
 @import url("utility/components.css");
 @import url("utility/typography.css");
+@import url("utility/colors.css");
 
 /* Home */
 @import url("introduction/introduction.css");
+
+/* Bicicletas */
+@import url("bikes/bikes-list.css");
 
 :root {
   --white: #ffffff;
