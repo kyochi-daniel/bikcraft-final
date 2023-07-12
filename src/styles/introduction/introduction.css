@@ -26,10 +26,6 @@
   color: var(--grey-500);
 }
 
-.introduction-content h1 > span {
-  color: var(--yello-400);
-}
-
 .introduction img {
   height: 100%;
   border-radius: 4px;

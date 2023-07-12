@@ -60,6 +60,7 @@
 
 @media (max-width: 800px) {
   .bike-list {
-    margin-bottom: 3.75rem;
+    margin-bottom: 2.5rem;
+    padding-bottom: 3.75rem;
   }
 }

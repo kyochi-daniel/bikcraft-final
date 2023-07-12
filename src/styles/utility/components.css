@@ -13,7 +13,7 @@
 
   padding: 1rem 2rem;
 
-  color: var(--yello-800);
+  color: var(--yellow-800);
   background: linear-gradient(#ffbf00, #f2a50c);
 
   display: inline-block;
@@ -22,6 +22,11 @@
 .button:hover {
   background: linear-gradient(#ffb60d, #e59317);
 }
+
+.span-style {
+  color: var(--yellow-400);
+}
+
 @media (max-width: 600px) {
   .button {
     padding: 0.75rem 1rem;

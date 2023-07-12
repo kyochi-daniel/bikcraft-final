@@ -13,6 +13,9 @@
 /* Bicicletas */
 @import url("bikes/bikes-list.css");
 
+/* Tecnologia */
+@import url("technology/technology.css");
+
 :root {
   --white: #ffffff;
   --grey-100: #f7f7f7;
@@ -27,9 +30,9 @@
   --dark-grey-300: #2e2e2e;
   --dark-grey-400: #111111;
   --black: #000000;
-  --yello-400: #ffbb00;
-  --yello-500: #e4a30b;
-  --yello-600: #a66f00;
-  --yello-700: #664400;
-  --yello-800: #332200;
+  --yellow-400: #ffbb00;
+  --yellow-500: #e4a30b;
+  --yellow-600: #a66f00;
+  --yellow-700: #664400;
+  --yellow-800: #332200;
 }
