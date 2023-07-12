@@ -1,0 +1,88 @@
+.header-bg {
+  background-color: var(--black);
+}
+
+.header {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  flex-wrap: wrap;
+}
+
+.header-menu a {
+  color: var(--white);
+
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+
+  display: inline-block;
+
+  padding: 1rem 0;
+
+  position: relative;
+}
+
+.header-menu a::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 0.125rem;
+  width: 0;
+  background-color: var(--white);
+  margin-top: 0.25rem;
+
+  transition: 0.3s;
+}
+
+.header-menu a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 800px) {
+  .header-menu {
+    gap: 1.25rem;
+  }
+
+  .header-menu a {
+    padding: 0.75rem 1rem;
+
+    border-radius: 4px;
+
+    background-color: var(--dark-grey-400);
+
+    transition: 0.3s;
+  }
+
+  .header-menu a::after {
+    display: none;
+  }
+
+  .header-menu a:hover {
+    background-color: var(--dark-grey-300);
+  }
+}
+
+@media (max-width: 600px) {
+  .header-menu {
+    gap: 0.75rem;
+  }
+
+  .header-menu a {
+    padding: 0.5rem 0.75rem;
+
+    font-size: 0.875rem;
+  }
+}
