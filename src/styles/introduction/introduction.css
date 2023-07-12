@@ -22,20 +22,10 @@
 
 .introduction h1 {
   margin-bottom: 2rem;
-  line-height: 1.125;
-
-  font-size: 4rem;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
 }
 
 .introduction p {
   margin-bottom: 1.25rem;
-
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
-  font-size: 1.5rem;
-  line-height: 1.5;
 
   color: var(--grey-500);
 }
@@ -44,22 +34,13 @@
   color: var(--yello-400);
 }
 
-
 .introduction img {
   height: 100%;
   border-radius: 4px;
   object-fit: cover;
 }
 
-@media (max-width: 1200px) {
-  .introduction h1 {
-    font-size: 3rem;
-  }
 
-  .introduction p {
-    font-size: 1.125rem;
-  }
-}
 
 @media (max-width: 800px) {
   .introduction-bg {
@@ -79,8 +60,6 @@
   }
 
   .introduction h1 {
-    font-size: 2rem;
-
     margin-bottom: 1rem;
   }
 

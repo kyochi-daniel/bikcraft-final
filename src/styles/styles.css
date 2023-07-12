@@ -4,6 +4,7 @@
 
 /* Utilidades */
 @import url("utility/components.css");
+@import url("utility/typography.css");
 
 /* Home */
 @import url("introduction/introduction.css");
