@@ -1,3 +1,9 @@
+.container {
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 1.25rem;
+}
+
 .button {
   font: 600 1.125rem/1.35 "Poppins", sans-serif;
   text-transform: uppercase;
