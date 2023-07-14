@@ -8,13 +8,16 @@
 @import url("utility/colors.css");
 
 /* Home */
-@import url("introduction/introduction.css");
+@import url("home/introduction.css");
 
 /* Bicicletas */
-@import url("bikes/bikes-list.css");
+@import url("home/bikes-list.css");
 
 /* Tecnologia */
-@import url("technology/technology.css");
+@import url("home/technology.css");
+
+/* Parceiros */
+@import url("home/partners.css");
 
 :root {
   --white: #ffffff;
