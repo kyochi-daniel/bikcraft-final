@@ -49,6 +49,10 @@
     grid-template-columns: repeat(2, 1fr);
   }
 
+  .partners ul li {
+    padding: 1.5rem;
+  }
+
   .partners li:nth-child(3),
   .partners li:nth-child(7) {
     border: 0;

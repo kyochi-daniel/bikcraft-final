@@ -1,0 +1,62 @@
+.depositions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background-color: var(--yellow-400);
+  overflow: hidden;
+}
+
+.depositions img {
+  width: 100%;
+  height: 32.5rem;
+
+  object-fit: cover;
+  border-radius: 0;
+}
+
+.depositions-content {
+  padding: 2.5rem 2.5rem 5rem 5rem;
+  align-self: end;
+}
+
+.depositions-content p {
+  max-width: 32ch;
+  margin-bottom: 2rem;
+
+  font-family: "Merriweather", serif;
+  font-style: italic;
+  font-weight: 900;
+
+  position: relative;
+}
+
+.depositions p::before {
+  position: absolute;
+  content: '“';
+  font-size: 3.5rem;
+  color: var(--yellow-500);
+
+  left: -1.875rem;
+  top: -1.25rem;
+}
+
+.depositions p::after {
+  position: absolute;
+  content: '”';
+  font-size: 3.5rem;
+  color: var(--yellow-500);
+}
+
+@media (max-width: 880px) {
+  .depositions {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .depositions img {
+    max-height: 200px;
+  }
+
+  .depositions-content {
+    padding: 2.5rem 2rem;
+  }
+}
