@@ -1,0 +1,71 @@
+.secures-bg {
+  background-color: var(--dark-grey-400);
+}
+
+.secures {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+  align-items: center;
+}
+
+.secures h2 {
+  grid-column: 1/-1;
+}
+
+.secures-item {
+  background-color: var(--black);
+  padding: 2rem 2rem 2rem 3.75rem;
+
+  border-radius: 4px;
+
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.secures-item h3 {
+  margin-bottom: 2.5rem;
+}
+
+.secures-item span {
+  grid-column: 2;
+  display: block;
+  text-align: right;
+}
+
+.secures-item ul {
+  grid-column: 1/-1;
+  margin-bottom: 2rem;
+}
+
+.secures-item li {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.secures-item li::before {
+  content: "";
+  display: inline-block;
+  width: 0.8125rem;
+  height: 0.5625rem;
+  background-image: url("../../assets/icones/lista.svg");
+  position: absolute;
+  left: -1.3125rem;
+}
+
+.secures-item li + li {
+  margin-top: 1.25rem;
+}
+
+.secures-item a {
+  grid-column: 1/-1;
+}
+
+@media (max-width: 800px) {
+  .secures {
+    grid-template-columns: 1fr;
+  }
+}

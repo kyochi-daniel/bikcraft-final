@@ -22,6 +22,9 @@
 /* Depoimentos */
 @import url("home/depositions.css");
 
+/* Seguros */
+@import url("home/secures.css");
+
 :root {
   --white: #ffffff;
   --grey-100: #f7f7f7;

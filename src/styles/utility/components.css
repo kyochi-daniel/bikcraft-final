@@ -17,10 +17,20 @@
   background: linear-gradient(#ffbf00, #f2a50c);
 
   display: inline-block;
+  max-width: max-content;
 }
 
 .button:hover {
   background: linear-gradient(#ffb60d, #e59317);
+}
+
+.button.secondary {
+  background: var(--dark-grey-200);
+  color: var(--grey-200);
+}
+
+.button:hover {
+  filter: brightness(0.8);
 }
 
 .span-style {
