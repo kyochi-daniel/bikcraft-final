@@ -25,25 +25,6 @@
   font-family: "Merriweather", serif;
   font-style: italic;
   font-weight: 900;
-
-  position: relative;
-}
-
-.depositions p::before {
-  position: absolute;
-  content: '“';
-  font-size: 3.5rem;
-  color: var(--yellow-500);
-
-  left: -1.875rem;
-  top: -1.25rem;
-}
-
-.depositions p::after {
-  position: absolute;
-  content: '”';
-  font-size: 3.5rem;
-  color: var(--yellow-500);
 }
 
 @media (max-width: 880px) {
@@ -58,5 +39,9 @@
 
   .depositions-content {
     padding: 2.5rem 2rem;
+  }
+
+  .depositions-content p {
+    max-width: none;
   }
 }
