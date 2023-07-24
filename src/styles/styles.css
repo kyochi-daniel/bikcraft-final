@@ -26,6 +26,11 @@
 /* Seguros */
 @import url("home/secures.css");
 
+/* Pages */
+
+/* Termos */
+@import url("terms/style.css");
+
 :root {
   --white: #ffffff;
   --grey-100: #f7f7f7;

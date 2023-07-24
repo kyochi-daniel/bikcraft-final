@@ -1,0 +1,19 @@
+.terms {
+  padding-top: 5rem;
+  padding-bottom: 80px;
+}
+
+.terms-card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  margin-bottom: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  .terms {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+}

@@ -39,9 +39,32 @@
   color: var(--yellow-400);
 }
 
+.title-bg {
+  padding-top: 3.75rem;
+  padding-bottom: 3.75rem;
+  background-color: var(--dark-grey-400);
+}
+
+.title p {
+  margin-bottom: 0.25rem;
+}
+
 @media (max-width: 600px) {
   .button {
     padding: 0.75rem 1rem;
     font-size: 1rem;
+  }
+}
+
+@media (max-width: 800px) {
+  .title-bg {
+    padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .title p {
+    font-size: 1rem;
+    text-transform: lowercase;
+    font-weight: 400;
   }
 }
