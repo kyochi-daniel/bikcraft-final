@@ -31,6 +31,9 @@
 /* Termos */
 @import url("terms/style.css");
 
+/* Página Bicicletas */
+@import url("bikes/style.css");
+
 :root {
   --white: #ffffff;
   --grey-100: #f7f7f7;
