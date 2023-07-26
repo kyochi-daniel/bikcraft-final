@@ -34,6 +34,9 @@
 /* Página Bicicletas */
 @import url("bikes/style.css");
 
+/* Página Seguros */
+@import url("secures/style.css");
+
 :root {
   --white: #ffffff;
   --grey-100: #f7f7f7;

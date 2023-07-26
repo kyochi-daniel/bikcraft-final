@@ -11,6 +11,10 @@
   align-items: center;
 }
 
+#secures .secures {
+  padding-top: 0;
+}
+
 .secures h2 {
   grid-column: 1/-1;
 }
