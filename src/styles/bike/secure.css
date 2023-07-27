@@ -1,0 +1,48 @@
+.bike-secure-bg {
+  background-color: var(--dark-grey-400);
+  box-shadow: inset 0 7.5rem var(--white), inset 0 -7.5rem var(--black);
+}
+
+.bike-secure {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2.5rem;
+}
+
+.bike-secure-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.bike-secure-content {
+  padding-top: 11.25rem;
+  padding-bottom: 11.25rem;
+}
+
+.bike-secure h2 {
+  margin-bottom: 2rem;
+}
+
+.bike-secure p {
+  margin-bottom: 1.25rem;
+}
+
+@media (max-width: 800px) {
+  .bike-secure-bg {
+    box-shadow: inset 0 -3.75rem var(--black);
+  }
+
+  .bike-secure {
+    grid-template-columns: 1fr;
+  }
+
+  .bike-secure-img {
+    grid-row: 2;
+  }
+
+  .bike-secure-content {
+    padding-top: 40px;
+    padding-bottom: 0;
+  }
+}

@@ -36,6 +36,7 @@
 
 /* Página Bicicletas Interna */
 @import url("bike/style.css");
+@import url("bike/secure.css");
 
 /* Página Seguros */
 @import url("secures/style.css");
