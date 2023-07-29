@@ -7,6 +7,7 @@
 @import url("utility/components.css");
 @import url("utility/typography.css");
 @import url("utility/colors.css");
+@import url("utility/form.css");
 
 /* Home */
 @import url("home/introduction.css");
@@ -40,6 +41,10 @@
 
 /* Página Seguros */
 @import url("secures/style.css");
+
+/* Página Seguros */
+@import url("contact/contact.css");
+@import url("contact/shop.css");
 
 :root {
   --white: #ffffff;
