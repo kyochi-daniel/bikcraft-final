@@ -5,8 +5,6 @@
 .contact {
   display: grid;
   grid-template-columns: 5fr 7fr;
-  padding-bottom: 200px;
-  
 }
 
 .contact-data,
