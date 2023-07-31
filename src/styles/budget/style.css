@@ -1,0 +1,129 @@
+#budget {
+  background: linear-gradient(to bottom, var(--dark-grey-400) 600px, var(--grey-100) 0px);
+}
+
+.budget {
+  display: grid;
+  grid-template-columns: 5fr 7fr;
+  padding-bottom: 7.5rem;
+}
+
+.budget h2 {
+  text-transform: uppercase;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.budget h2::before {
+  content: '';
+  display: inline-block;
+  width: 0.25rem;
+  height: 0.5rem;
+  background-color: var(--yellow-400);
+  position: absolute;
+  left: -0.75rem;
+}
+
+.budget-product,
+.budget-data {
+  padding: 3.75rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+
+.budget-product {
+  border-radius: 5px 0 0 5px;
+  background-color: var(--black);
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.25rem;
+  align-content: start;
+}
+
+.budget-product > * {
+  grid-column: 1/-1;
+}
+
+.budget-product > label {
+  grid-column: initial;
+} 
+
+.budget-product label {
+  font: 600 1rem/1.5 "Poppins", sans-serif;
+  color: var(--grey-400);
+  background-color: var(--dark-grey-300);
+  padding: 0.75rem 1rem;
+  border-radius: 4px;
+  
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+
+  border: 1px solid var(--dark-grey-300);
+
+  cursor: pointer;
+}
+
+.budget-product label::before {
+  content: '';
+  display: inline-block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border: 1px solid var(--grey-600);
+  border-radius: 50%;
+  margin-right: 0.5rem;
+}
+
+.budget-product label:hover {
+  filter: brightness(1.2);
+}
+
+.budget-product input:focus + label {
+  box-shadow: 0 0 0 2px var(--yellow-400);
+  border-color: var(--dark-grey-400);
+}
+
+.budget-product label span {
+  display: none;
+}
+
+.budget-product input:checked + label span {
+  display: inline-block;
+}
+
+.budget-product input:checked + label {
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.budget-product input:checked + label::before {
+  border-color: var(--grey-700);
+  box-shadow: inset 0 0 0 3px var(--white), inset 0 0 0 6px var(--grey-700);
+}
+
+.budget-product input {
+  opacity: 0;
+  position: absolute;
+  pointer-events: none;
+}
+
+.budget-data {
+  border-radius:  0 5px 5px 0;
+  background-color: var(--white);
+}
+
+.budget-content {
+  display: none;
+}
+
+.budget-content h2,
+.budget-data h2:nth-of-type(n + 2) {
+  margin-top: 1.25rem;
+}
+
+#bikcraft:checked ~ #budget-bikcraft,
+#secure:checked ~ #budget-secure {
+  display: grid;
+  gap: 1.25rem;
+}

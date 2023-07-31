@@ -28,7 +28,6 @@
 @import url("home/secures.css");
 
 /* Pages */
-
 /* Termos */
 @import url("terms/style.css");
 
@@ -45,6 +44,9 @@
 /* Página Seguros */
 @import url("contact/contact.css");
 @import url("contact/shop.css");
+
+/* Página de Orçamento */
+@import url("budget/style.css");
 
 :root {
   --white: #ffffff;
