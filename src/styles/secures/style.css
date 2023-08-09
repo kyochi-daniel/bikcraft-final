@@ -42,38 +42,49 @@
   background-color: var(--grey-200);
 }
 
-.questions dt {
+.questions button {
   display: grid;
   grid-template-columns: auto 1fr auto;
   align-items: center;
   gap: 0.5rem;
 
   cursor: pointer;
+  border: none;
+  background-color: transparent;
+  width: 100%;
+  text-align: left;
 }
 
-.questions dt::before {
-  content: '';
+.questions button::before {
+  content: "";
   display: inline-block;
   width: 0.75rem;
   height: 0.5rem;
   background-color: var(--yellow-400);
 }
 
-.questions dt::after {
-  content: '';
+.questions button::after {
+  content: "";
   display: inline-block;
   width: 0.875rem;
   height: 0.375rem;
-  background: url('../../assets/icones/seta-abrir.svg');
+  background: url("../../assets/icones/seta-abrir.svg");
 
   transition: 0.3s;
 }
 
-.questions dt:hover::after {
+.questions button:hover::after,
+.questions button[aria-expanded="true"]::after {
   transform: rotate(180deg);
 }
 
+.questions dd.active {
+  display: block;
+}
+
 .questions dd {
+  display: none;
+
   padding-left: 1.25rem;
   padding-top: 1rem;
 
