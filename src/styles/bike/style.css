@@ -12,7 +12,6 @@
   text-transform: uppercase;
 }
 
-
 .bike-img {
   display: flex;
   flex-wrap: wrap;
@@ -21,7 +20,7 @@
 
 .bike-img img {
   flex: 1;
-  min-width: 200px;
+  min-width: 12.5rem;
 }
 
 .bike-img img:first-child {
@@ -37,7 +36,7 @@
   grid-template-columns: max-content auto;
   align-items: center;
   justify-items: start;
-  gap: 8px 12px;
+  gap: 0.5rem 0.75rem;
 
   margin-bottom: 2.5rem;
 }

@@ -43,3 +43,27 @@ function eventQuestions(question) {
 }
 
 questions.forEach(eventQuestions);
+
+// Galeria de bicicletas
+const gallery = document.querySelectorAll(".bike-img img");
+const galleryContainer = document.querySelector(".bike-img");
+
+function tradeImg(e) {
+  const img = e.currentTarget;
+  const media = matchMedia("(min-width: 1000px)").matches;
+  if (media) {
+    galleryContainer.prepend(img);
+  }
+}
+
+function eventGallery(img) {
+  img.addEventListener("click", tradeImg);
+}
+
+gallery.forEach(eventGallery);
+
+// Animação
+
+if (window.SimpleAnime) {
+  new SimpleAnime();
+}
